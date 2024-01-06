@@ -1,0 +1,51 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    //1
+	    int number=4; 
+	    int number2=6; 
+	    int number3=10;
+		System.out.println(number);
+		System.out.println(number2);
+		System.out.println(number3);
+		//2 
+		double num=5.5;
+		int num2=9;
+		System.out.println(num+"   "+num2);
+        //3 
+        char letter1='T';
+        char letter2='a';;
+        char letter3='h';
+        char letter4='e';
+        char letter5='l';
+        System.out.println(letter1+""+letter2+""+letter3+""+letter4+""+letter5);
+        //4 
+        int firstNum=4;
+        int secondNum=5;
+        System.out.println(firstNum+" is less than "+secondNum);
+        //5 
+        int number4=10; 
+        int number5=9; 
+        int number6=11;
+        int sum =0;
+        int avg=0;
+        sum = number4+number5+number6;
+        avg= sum/3;
+        System.out.println(avg);
+        //6 
+        int a =3;
+        int b = 4;
+        int c=0; 
+        c = a*a+b*b;
+        System.out.println(c);
+        //7
+        int x =9; 
+        int y=0;
+        y = 2*x+5;
+        System.out.println(y);
+        //8
+        String str1= "I like to study computer science";
+        String str2="and therefore ready to invest";
+        String str3="hours a day for practice";
+        int hours=5;
+        System.out.println(str1+str2+" "+hours+" "+str3);
