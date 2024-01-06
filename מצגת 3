@@ -1,0 +1,144 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    //1
+	    int num=0; 
+	    num = scan.nextInt();
+        if (num>0)
+        {
+		    System.out.println("the number is positive");
+	    }
+	    else
+	    {
+	        System.out.println("the number is negetive");
+        }
+        //2
+        int number1=0;
+        int number2=0; 
+        number1= scan.nextInt();
+        number2=scan.nextInt();
+        if(number1<number2)
+        {
+            System.out.println(number1);
+        }
+        else
+        {
+            System.out.println(number2);
+        }
+        //3
+        String letter1=" ";
+        String letter2=" ";
+        int way1 =0;
+        int way2=0;
+        int speed1=0;
+        int speed2=0;
+        int person1=0; 
+        int person2=0;
+        System.out.println("enter the letters:");
+        letter1=scan.next();
+        letter2=scan.next();
+        System.out.println("enter the ways:");
+        way1=scan.nextInt();
+        way2=scan.nextInt();
+        System.out.println("enter the speeds");
+        speed1=scan.nextInt();
+        speed2=scan.nextInt();
+        person1= way1/speed1;
+        person2= way2/speed2;
+        if(person1<person2)
+        {
+            System.out.println(letter1);
+        }
+        else
+        {
+            System.out.println(letter2);
+        }
+        //4
+        int grade1=0; 
+        int grade2=0; 
+        int grade3=0;
+        double avg =0; 
+        int sum=0;
+        System.out.println("enter your grades:");
+        grade1= scan.nextInt();
+        grade2=scan.nextInt();
+        grade3=scan.nextInt();
+        sum= grade1+grade2+grade3;
+        avg = sum/3;
+        System.out.println(avg);
+        //5
+        int first_num =0; 
+        int remain=1;
+        int fifth_num=0;
+        int ten_num=0;
+        remain=scan.nextInt();
+        first_num=scan.nextInt();
+        fifth_num=first_num+4*remain;
+        ten_num=first_num+9*remain;
+        System.out.println("fifth:"+fifth_num);
+        System.out.println("ten:"+ten_num);
+        //6
+        double money=0;
+        int full=0;
+        int rest=0;
+        System.out.println("How many cartives did you buy?");
+        int buy = scan.nextInt();
+        if(buy<10)
+        {
+            money =buy*1.2;
+        }
+        if(buy>=10&& buy<54)
+        {
+            if(buy%10==0)
+            {
+            money= (buy/10)*10;
+            }
+            else
+            {
+                rest= buy%10;
+                money= rest*1.2;
+                full=buy-rest;
+                money =rest*1.20+(full/10)*10; 
+            }
+        }
+        else if(buy>=54&& buy<=108)
+        {
+            if(buy%54==0)
+            {
+                money=(buy/54)*50;
+            }
+            else
+            {
+                rest = buy%54;
+                full = buy-rest;
+                money= rest*1.20+(full/54)*50;
+            }
+        }
+        else
+        {
+            System.out.println("amount is not valid");
+        }
+        System.out.println(money);
+        //7
+        String name = scan.nextLine();
+        String school =scan.nextLine();
+        int number= scan.nextInt();
+        System.out.println("My name is "+name+" , My school is "+school+" , The number of subjects I study is "+number);
+        //8 
+        int three_digit = scan.nextInt();
+        int units = three_digit%10;
+        int tens= (three_digit/10)%10;
+        int hund= three_digit/100;
+        int sum1 = units+tens+hund;
+        if(sum1%2==0)
+        {
+            System.out.println(true);
+        }
+        else
+        {
+            System.out.println(false);
+        }
+        System.out.println(sum);
+        }
