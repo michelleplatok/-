@@ -1,0 +1,119 @@
+import java.util.Scanner;
+import java.util.Random;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan= new Scanner(System.in);
+	    //1
+	    String name1= scan.next();
+	    String name2= scan.next();
+	    String name3= scan.next();
+	    String max=" ";
+	    String min=" ";
+	    if(name1.compareTo(name2)<0 &&name1.compareTo(name3)<0){
+	        max=name1;
+	    }
+	    else if(name2.compareTo(name1)<0&&name2.compareTo(name3)<0){
+	        max=name2;
+	    }
+	    else{
+	        max=name3;
+	    }
+	    if(name1.compareTo(name2)>0&&name1.compareTo(name3)>0)
+	    {
+	        min=name1;
+	    }
+	    else if(name2.compareTo(name1)>0&& name2.compareTo(name3)>0){
+	        min=name2;
+	    }
+	    else{
+	        min=name3;
+	    }
+	    if(name1!=min&&name1!=max){
+	        System.out.println(max+"\n"+name1+"\n"+min);
+	    }
+	    else if(name2!=max&&name2!=min){
+	        System.out.println(max+"\n"+name2+"\n"+min);
+	    }
+	    else{
+	        System.out.println(max+"\n"+name3+"\n"+min);
+	    }
+		//2
+		String string1 = scan.nextLine(); 
+		int len = string1.length();
+		System.out.println(len);
+		//3
+		String string = scan.next();
+		if (string.charAt(0)==string.charAt(2))
+		{
+		    System.out.println("True");
+		}
+		else
+		{
+		    System.out.println("False");
+		}
+		//4
+		String str1= scan.next();
+		char letter_one= str1.charAt(0);
+		char letter_two=str1.charAt(1);
+		char letter_three= str1.charAt(2);
+		String new1 =letter_three+""+letter_two+""+letter_one;
+		System.out.println(new1);
+		//5
+		String new_str= scan.next();
+		char letter1=new_str.charAt(0);
+		char letter2=new_str.charAt(1);
+		char letter3=new_str.charAt(2);
+		char letter4=new_str.charAt(3);
+		if(letter1=='a'||letter1=='e'||letter1=='i'||letter1=='o'||letter1=='u')
+		{
+		    letter1='*';
+		}
+		if(letter2=='a'||letter2=='e'||letter2=='i'||letter2=='o'||letter2=='u')
+		{
+		    letter2='*';
+		}
+		if(letter3=='a'||letter3=='e'||letter3=='i'||letter3=='o'||letter3=='u')
+		{
+		    letter3='*';
+		}
+		if(letter4=='a'||letter4=='e'||letter4=='i'||letter4=='o'||letter4=='u')
+		{
+		    letter4='*';
+		}
+		System.out.println(letter1+""+letter2+""+letter3+""+letter4);
+		//6
+		int num=0;
+		Random r =new Random();
+		num =r.nextInt(100);
+		if(num>=0&&num<=9)
+		{
+		    System.out.println("the number is one digit");
+		}
+		else
+		{
+		    System.out.println("the number is two digit");
+		}
+		if(num %2==0)
+		{
+		    System.out.println("the number is divid by two ");
+		}
+		if(num%3==0)
+		{
+		    System.out.println("the number is divide by 3");
+		}
+		//7
+		int x1= scan.nextInt();
+		int y1=scan.nextInt();
+		int x2= scan.nextInt();
+		int y2= scan.nextInt();
+		int sub1=x1-x2;
+		int sub2=y1-y2;
+		double pow1= Math.pow(sub1,2);
+		double pow2=Math.pow(sub2,2);
+		double add = pow1+pow2;
+		double sqrt1= Math.sqrt(add);
+		System.out.println(sqrt1);
+		}
+
+	}
